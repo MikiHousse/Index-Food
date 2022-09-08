@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Index Food</title>
 </head>
 <body>
@@ -31,14 +32,58 @@
     </header>
     <main class="main">
         <div class="slider container">
-            <div class="slide slide-text-light slide-summer">
-                <div class="slide-content">
-                    <h2 class="slide-title">Неделя летних овощей</h2>
-                    <p class="slide-text">Специальная овощная корзина. Новые продукты,
-                        специальные цены, скидки!</p>
-                    <a href="#" class="button button-primary">Заказать со скидкой</a>
+
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="slide slide-text-light slide-summer">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Неделя летних овощей</h2>
+                        <p class="slide-text">Специальная овощная корзина. Новые продукты,
+                            специальные цены, скидки!</p>
+                        <a href="#" class="button button-primary">Заказать со скидкой</a>
+                    </div>
                 </div>
             </div>
+            <!-- <div class="swiper-slide">
+                <div class="slide slide-text-light slide-vitamin">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Витаминная неделя</h2>
+                        <p class="slide-text">Специальная овощная корзина. Новые продукты,
+                            специальные цены, скидки!</p>
+                        <a href="#" class="button button-primary">Заказать со скидкой</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="swiper-slide">
+                <div class="slide slide-text-light slide-autumn">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Неделя осенних овощей</h2>
+                        <p class="slide-text">Специальная овощная корзина. Новые продукты,
+                            специальные цены, скидки!</p>
+                        <a href="#" class="button button-primary">Заказать со скидкой</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="slider-buttons">
+                <div class="slider-button slider-button-prev">
+                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.752 23.994L6.879 14.121C6.31659 13.5584 6.00064 12.7955 6.00064 12C6.00064 11.2045 6.31659 10.4416 6.879 9.87901L16.746 0.0120087L18.16 1.42601L8.293 11.293C8.10553 11.4805 8.00021 11.7348 8.00021 12C8.00021 12.2652 8.10553 12.5195 8.293 12.707L18.166 22.58L16.752 23.994Z" fill="#F66A15"/>
+                    </svg> -->
+                </div>
+                <div class="slider-button slider-button-next">
+                    <!-- <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.24803 0.00599098L12.121 9.87899C12.6834 10.4416 12.9994 11.2045 12.9994 12C12.9994 12.7955 12.6834 13.5584 12.121 14.121L2.25403 23.988L0.840031 22.574L10.707 12.707C10.8945 12.5195 10.9998 12.2652 10.9998 12C10.9998 11.7348 10.8945 11.4805 10.707 11.293L0.83403 1.41999L2.24803 0.00599098Z" fill="#F66A15"/>
+                    </svg> -->
+                </div>
+            </div>
+            <!-- /.slider-buttons -->
         </div>
         <!-- card -->
         <div class="container">
@@ -216,29 +261,31 @@
                 </div>
             </div>
         </section>
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-wrapper">
-                    <img src="./img/logo.png" alt="logo" width="205" class="footer-logo">
-                    <nav class="footer-nav">
-                        <a href="#" class="footer-link">Доставка и оплата</a>
-                        <a href="#" class="footer-link">Напишите нам</a>
-                    </nav>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <img src="./img/tele.svg" alt="telegtam">
-                        </a>
-                        <a href="#" class="social-link">
-                            <img src="./img/vk.svg" alt="telegtam">
-                        </a>
-                        <a href="#" class="social-link">
-                            <img src="./img/instagram.svg" alt="telegtam">
-                        </a>
+    </main>
+            <!-- footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <img src="./img/logo.png" alt="logo" width="205" class="footer-logo">
+                        <nav class="footer-nav">
+                            <a href="#" class="footer-link">Доставка и оплата</a>
+                            <a href="#" class="footer-link">Напишите нам</a>
+                        </nav>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <img src="./img/tele.svg" alt="telegtam">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="./img/vk.svg" alt="telegtam">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="./img/instagram.svg" alt="telegtam">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </main>
-</body>
+            </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
 </html>

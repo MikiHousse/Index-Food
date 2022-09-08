@@ -109,7 +109,7 @@ body {
 
 .slide-content {
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .slide-title {
@@ -126,6 +126,16 @@ body {
     line-height: 23px;
     margin-bottom: 30px;
 }
+
+/* .slider-buttons {
+    position: absolute;
+    right: 46px;
+    left: 40px;
+}
+
+.swiper {
+    position: relative;
+} */
 
 .button-primary {
     background: #F47322;
@@ -150,6 +160,21 @@ body {
 .slide-summer {
     border-radius: 20px;
     background-image: url(./img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-vitamin {
+    border-radius: 20px;
+    background-image: url(./img/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: none;
+}
+
+.slide-autumn {
+    border-radius: 20px;
+    background-image: url(./img/1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -367,6 +392,7 @@ body {
     overflow: hidden;
     background-color: white;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .tab-img {
@@ -375,6 +401,8 @@ body {
 
 .tabs-card-content {
     padding: 23px;
+    /* display: block;
+    margin-top: 20px; */
 }
 
 .tabs-title {
@@ -454,6 +482,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 52px;
+    flex-wrap: wrap;
 }
 
 .card-point {
@@ -531,4 +560,62 @@ body {
 .social-link {
     margin-left: 20px;
     text-decoration: none;
+}
+
+
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .searsch-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content {
+        flex-wrap: wrap;
+    }
+    .tabs-card-content {
+        flex: 50%;
+        max-width: calc(30 - 30px);
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 760px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card {
+        width: calc(50% - 30px);
+    }
+    .footer-logo {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 95%;
+    }
 }
